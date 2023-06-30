@@ -1,3 +1,4 @@
+import Center from '@/components/Center'
 import Sidebar from '../components/Sidebar'
 
 function Home() {
@@ -5,8 +6,7 @@ function Home() {
     <div className="bg-black h-screen overflow-hidden">
       <main className="flex">
         <Sidebar/>
-        {/* Sidebar*/}
-        {/* Center*/}
+        <Center/>
       </main>
 
       <div>
