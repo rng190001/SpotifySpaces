@@ -27,7 +27,7 @@ function useSongInfo() {
     }, [currentTrackId, spotifyApi])
 
 
-    return songInfo
+    return {songInfo};
 }
 
 export default useSongInfo
