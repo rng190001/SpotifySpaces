@@ -4,10 +4,12 @@ import{
     SearchIcon,
     LibraryIcon,
     PlusCircleIcon,
-    HeartIcon,
     RssIcon,
     LogoutIcon,
 } from "@heroicons/react/outline";
+import{
+  HeartIcon,
+} from "@heroicons/react/solid";
 import { data } from "autoprefixer";
 import { signOut, useSession } from "next-auth/react";
 import {useState, useEffect} from "react";
@@ -53,12 +55,12 @@ function Sidebar() {
             <PlusCircleIcon className="h-5 w-5" />
             <p>Create Playlist</p>
           </button>
-          <button className="flex items-center space-x-2 hover:text-white">
-            <HeartIcon className="h-5 w-5" />
+          <button className="flex items-center space-x-2  hover:text-white">
+            <HeartIcon className="h-5 w-5 text-blue-500" />
             <p>Liked Songs</p>
           </button>
           <button className="flex items-center space-x-2 hover:text-white">
-            <RssIcon className="h-5 w-5" />
+            <RssIcon className="h-5 w-5 text-green-500" />
             <p>Podcasts</p>
           </button>
           <hr className="border-t-[0.1px] border-gray-900" />
