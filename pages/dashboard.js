@@ -8,8 +8,8 @@ import DashboardStats from '@/components/DashboardStats';
 function Dashboard() {
     const {data:session} = useSession();
   return (
-    <div className="bg-black">
-      <div className="flex text-white">
+    <div className="bg-black ">
+      <div className="flex text-white ">
         <Sidebar/>
         <DashboardCenter/>
       </div>
