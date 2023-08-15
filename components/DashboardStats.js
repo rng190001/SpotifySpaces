@@ -32,9 +32,12 @@ function DashboardStats() {
             <div className="">
                 <div className="absolute top-[492px] left-[215px] w-[326px] h-[120px] text-white text-2xl font-normal ">
                     Top Genres
-                    <div className= "overflow-y-scroll h-[155px] w-[615px]">
+                    <div className= "overflow-y-scroll h-[194px] w-[615px]">
                     <div className="pt-3">
                         <div class="w-[615px] h-16 bg-gradient-to-r from-[#8b8a94] via-[#737373] to-[#57534e] rounded-[15px] shadow backdrop-blur-2xl"></div>
+                    </div>
+                    <div className="pt-3">
+                        <div class="w-[615px] h-16 bg-gradient-to-r from-[#8b8a94] via-[#737373] to-[#57534e] rounded-[15px] shadow backdrop-blur-2xl"></div>  
                     </div>
                     <div className="pt-3">
                         <div class="w-[615px] h-16 bg-gradient-to-r from-[#8b8a94] via-[#737373] to-[#57534e] rounded-[15px] shadow backdrop-blur-2xl"></div>  
