@@ -1,6 +1,6 @@
 import { currentTrackIdState, isPlayingState } from "@/atoms/songAtom";
 import useSongInfo from "@/hooks/useSongInfo";
-import useSpotify from "@/hooks/useSpotify"
+import useSpotify from "@/hooks/useSpotify";
 import { SwitchHorizontalIcon, VolumeUpIcon as VolumeDownIcon, VolumeUpIcon} from "@heroicons/react/outline";
 import { RewindIcon, PauseIcon, PlayIcon, FastForwardIcon, ReplyIcon} from "@heroicons/react/solid";
 import { useSession } from "next-auth/react";
@@ -45,7 +45,7 @@ function Player() {
        if(spotifyApi.getAccessToken() && !currentTrackId){
            //fetch song info
            fetchCurrentSong();
-           setVolume(10);
+           setVolume(50);
        }
     },[currentTrackId, spotifyApi, session])
 

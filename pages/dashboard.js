@@ -2,14 +2,16 @@ import { getSession } from 'next-auth/react';
 import { useSession } from "next-auth/react";
 import Sidebar from '@/components/Sidebar';
 import Player from '@/components/Player';
+import DashboardCenter from '@/components/DashboardCenter';
+import DashboardStats from '@/components/DashboardStats';
 
 function Dashboard() {
     const {data:session} = useSession();
   return (
-    <div className="bg-black h-screen overflow-hidden">
+    <div className="bg-black">
       <div className="flex text-white">
-      <Sidebar/>
-        <h2>Hello from Dashboard!, {session?.user.name}</h2>
+        <Sidebar/>
+        <DashboardCenter/>
       </div>
 
       <div className="sticky bottom-0">
