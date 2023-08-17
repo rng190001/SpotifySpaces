@@ -28,7 +28,7 @@ function Player() {
                 });
         }
     }
-
+    
     const handlePlayPause =() =>{
         spotifyApi.getMyCurrentPlaybackState().then((data) =>{
             if(data.body?.is_playing){
@@ -42,7 +42,8 @@ function Player() {
     };
 
     useEffect(() => {
-       if(spotifyApi.getAccessToken() && !currentTrackId){
+        // if(spotifyApi.getAccessToken()){
+        if(spotifyApi.getAccessToken() && !currentTrackId){
            //fetch song info
            fetchCurrentSong();
            setVolume(50);
