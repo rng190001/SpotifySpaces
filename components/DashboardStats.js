@@ -1,11 +1,11 @@
 import useTopAlbums from "@/hooks/useTopAlbums"
 import useTopArtists from "@/hooks/useTopArtists";
-import useTopGenres from "@/hooks/useTopGenres";
+// import useTopGenres from "@/hooks/useTopGenres";
 import Link from 'next/link';
 
 function DashboardStats() {
     const albums = useTopAlbums();
-    const topGenres = useTopGenres();
+    // const topGenres = useTopGenres();
     const topArtists = useTopArtists();
 
     const albumImages = [
@@ -39,7 +39,7 @@ function DashboardStats() {
                 </div>
             </div>
 
-            <div className="">
+            {/* <div className="">
                 <div className="absolute top-[492px] left-[215px] w-[326px] h-[120px] text-white text-2xl font-normal ">
                     My Top Genres
                     <div className= "overflow-y-scroll h-[194px] w-[615px]">
@@ -47,7 +47,7 @@ function DashboardStats() {
                         <div key={index} className="pt-3">
                             <div className="w-[615px] h-16 bg-gradient-to-r from-[#8b8a94] via-[#737373] to-[#57534e] rounded-[15px] shadow backdrop-blur-2xl">
                                 <div>
-                                    {/* <img className="w-[49px] h-[49px] rounded-2xl absolute top-[7px] left-[17px] cursor-pointer transform hover:scale-105 transition duration-200 ease-out hover:drop-shadow-lg" src={genreEntry.artistProPic}></img> */}
+                                    <img className="w-[49px] h-[49px] rounded-2xl absolute top-[7px] left-[17px] cursor-pointer transform hover:scale-105 transition duration-200 ease-out hover:drop-shadow-lg" src={genreEntry.artistProPic}></img>
                                 </div>
                                 <div className="w-115 h-[27px] text-white text-[20px] font-normal absolute top-[15px] left-[82px]">{genreEntry.genre}</div>
                                 <div className="w-[220px] h-5 absolute top-[14px] left-[390px]">
@@ -63,7 +63,7 @@ function DashboardStats() {
                         ))}
                     </div>
                 </div>
-            </div>
+            </div> */}
 
             <div>
             <div class="absolute top-[250px] left-[907px] w-[400px] h-[7px] origin-top-left rotate-[89.82deg] bg-gradient-to-r from-[#8b8a94] via-[#737373] to-[#57534e] rounded-[40px] shadow backdrop-blur-2xl"></div>
