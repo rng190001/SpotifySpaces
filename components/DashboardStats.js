@@ -47,7 +47,7 @@ function DashboardStats() {
                         <div key={index} className="pt-3">
                             <div className="w-[615px] h-16 bg-gradient-to-r from-[#8b8a94] via-[#737373] to-[#57534e] rounded-[15px] shadow backdrop-blur-2xl">
                                 <div>
-                                    <img className="w-[49px] h-[49px] rounded-2xl absolute top-[7px] left-[17px] cursor-pointer transform hover:scale-105 transition duration-200 ease-out hover:drop-shadow-lg" src={genreEntry.artistProPic}></img>
+                                    {/* <img className="w-[49px] h-[49px] rounded-2xl absolute top-[7px] left-[17px] cursor-pointer transform hover:scale-105 transition duration-200 ease-out hover:drop-shadow-lg" src={genreEntry.artistProPic}></img> */}
                                 </div>
                                 <div className="w-115 h-[27px] text-white text-[20px] font-normal absolute top-[15px] left-[82px]">{genreEntry.genre}</div>
                                 <div className="w-[220px] h-5 absolute top-[14px] left-[390px]">
